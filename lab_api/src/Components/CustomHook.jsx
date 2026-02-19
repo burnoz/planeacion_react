@@ -4,18 +4,15 @@ import { Loading } from '../hooks/Loading.jsx';
 import { Card } from '../hooks/Card.jsx';
 
 export const CustomHook = () => {
-    const { counter, decrement, increment } = useCounter(1005);
-    const {data, hasError, isLoading} = useFetch(`https://ctftime.org/api/v1/teams/1005/`)
+    const { counter, decrement, increment } = useCounter(500);
+    const {data, hasError, isLoading} = useFetch(`https://picsum.photos/id/${counter}/info`);
     
     return (
     <>
-        <h1>Información de equipos en CTFtime</h1>
+        <h1>Imágenes de lorem picsum</h1>
         <hr/>
-        <h2>{data?.primary_alias}</h2>
-        {isLoading ? <Loading/> : (<Card id={counter} name={data.primary_alias} sprites={ [
-            data.logo
-            ] } />)}
-    
+
+        {isLoading ? <Loading/> : (<Card id={counter} author={data.author} image={data.download_url} />)}
     
         <button className='btn btn-primary' onClick= { ()=>decrement() } >Anterior</button>
         <button className='btn btn-primary' onClick= { ()=>increment() } >Siguiente</button>
