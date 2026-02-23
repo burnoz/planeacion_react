@@ -1,0 +1,105 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.App {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  color: #646cff;
+  margin-bottom: 30px;
+}
+
+form {
+  background-color: #1a1a1a;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #646cff;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #242424;
+  color: #ffffff;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #535bf2;
+  box-shadow: 0 0 0 3px rgba(100, 108, 255, 0.1);
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 14px;
+  background-color: #646cff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.btn-submit:hover {
+  background-color: #535bf2;
+}
+
+.btn-submit:active {
+  transform: scale(0.98);
+}
+
+.resultado {
+  background-color: #1a1a1a;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  border: 2px solid #646cff;
+}
+
+.resultado h2 {
+  color: #646cff;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.resultado p {
+  margin: 12px 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+.resultado p strong {
+  color: #646cff;
+  margin-right: 10px;
+}
