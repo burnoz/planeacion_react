@@ -1,0 +1,104 @@
+.workflow-list {
+  margin-top: 2rem;
+}
+
+.workflow-list h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.workflow-list-empty {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  color: #666;
+}
+
+.table-container {
+  overflow-x: auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.workflows-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+.workflows-table thead {
+  background: #646cff;
+  color: white;
+}
+
+.workflows-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+.workflows-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.workflows-table tbody tr:hover {
+  background: #f9f9f9;
+}
+
+.workflows-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.role-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.role-usuario {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.role-supervisor {
+  background: #fff3e0;
+  color: #f57c00;
+}
+
+.role-administrador {
+  background: #fce4ec;
+  color: #c2185b;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn-action {
+  padding: 0.5rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 1.25rem;
+  transition: transform 0.2s;
+}
+
+.btn-action:hover {
+  transform: scale(1.2);
+}
+
+.btn-edit:hover {
+  filter: brightness(1.2);
+}
+
+.btn-delete:hover {
+  filter: brightness(1.2);
+}
